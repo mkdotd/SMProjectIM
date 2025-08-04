@@ -45,9 +45,9 @@
    cd SMProjectIM/Inventory
    ```
 
-2. **Compile the project**
+2. **Compile the project(powershell)**
    ```bash
-   javac -d out -cp "src/main/java" src/main/java/com/inventory/*.java src/main/java/UtilityFunctions/*.java
+   javac -d out -cp "src/main/java" (Get-ChildItem src/main/java/com/inventory/*.java, src/main/java/UtilityFunctions/*.java)
    ```
 
 3. **Run the application**
@@ -58,16 +58,6 @@
 4. **Default Login Credentials**
    - **Username:** `madhan`
    - **Password:** `1234`
-
-### Running Tests
-
-```bash
-# Run all unit tests
-java -cp "junit-platform-console-standalone.jar:out" org.junit.platform.console.ConsoleLauncher --scan-classpath
-
-# Run specific test class
-java -cp "junit-platform-console-standalone.jar:mockito-core.jar:out" org.junit.platform.console.ConsoleLauncher --select-class com.inventory.AddProductTest
-```
 
 ## 📁 Data Management
 
